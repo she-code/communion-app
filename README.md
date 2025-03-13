@@ -1,54 +1,35 @@
-# React + TypeScript + Vite
+# CommunionHub - Connecting People Through Faith and Community Support
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CommunionHub is a platform designed to bring together individuals from all faiths to promote unity, understanding, and collaboration. The app allows users to discover, create, and participate in events that foster interfaith dialogue, community support, and shared values. Whether you're looking to attend a local event, volunteer for a cause, or contribute to community efforts, CommunionHub is your go-to space for connection and positive impact.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Event Creation**: Users can create and manage events focused on interfaith dialogue, charity, social causes, and more.
+- **Community Support**: A platform for discovering and participating in community-building initiatives.
+- **Event Categories**: Organize events into categories such as Religious, Social, Charity, etc., making it easy to find relevant events.
+- **User-friendly Interface**: Simple and intuitive interface for users to create, view, and share events that connect people across faiths.
+- **Responsive Design**: Fully responsive and optimized for various devices to ensure a seamless experience on mobile and desktop.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend**: React.js
+- **State Management**: React's `useState` hook
+- **Styling**: Tailwind CSS
+- **Form Handling**: React hooks and controlled components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
+![Image](https://github.com/user-attachments/assets/23950e3c-0791-4ff0-bfc3-c7bcf93560fb)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+#[Deployed Site](https://communionappf.netlify.app/)
+## Installation
+
+To get started with the app, clone the repository and install the necessary dependencies:
+
+```bash
+git clone [https://github.com/yourusername/communionhub.git](https://github.com/she-code/communion-app.git)
+cd communionhub
+npm install
