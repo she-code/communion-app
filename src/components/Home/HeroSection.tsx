@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import styled from "styled-components";
 import { navigate } from "raviger";
-
+import video from "../../pr.mp4";
 // Styled Components
 const HeroContainer = styled.section`
   position: relative;
@@ -114,7 +114,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <BackgroundVideo autoPlay loop muted>
-        <source src="../../src/assets/images/pr.mp4" type="video/mp4" />
+        <source src={video} type="video/mp4" />
       </BackgroundVideo>
       <Overlay />
       <HeroContent>
